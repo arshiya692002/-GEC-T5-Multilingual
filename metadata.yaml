@@ -1,0 +1,28 @@
+target_language: two-letter ISO language code of the texts in the corpus, e.g. "sv" for L2 Swedish
+source_corpus: name of the source corpus
+learner_type: L1|L2|mixed # whether the authors of the essays are first-language speakers, second language learners or both/unknown (e.g if the corpus is crowdsources)
+short_description: short description of the corpus
+links: # optional
+  - link to paper
+  - link to data sheet or similar 
+  - ...
+contact: maintainer@institution.xx # contact information
+availability: open|restricted # use "open" if the subcorpus is free to use outside of the shared task, restricted otherwise. Note that this refers to the MultiGEC subcorpus, not to the source corpus
+license: 
+  name: name of the license
+  url: link to the full text of the license
+sentence_aligned: false|true # indicate "true" if sentence alignments are available. For the time being, you do NOT need to upload a sentence-aligned version of the corpus
+original_essays: # stats in reference to the *-orig-*.md files
+  n_essays: 
+    total: a+b+c
+    train: a
+    dev: b
+    test: c
+reference_essays_1: # stats in reference to the *-refX-*.md files
+  correction_style: minimal|fluency
+  n_essays: 
+    total: a+b+c
+    train: a
+    dev: b
+    test: c
+# if available, add sections for additional references, named reference_essays_2, reference_essays_3 etc. (these may have less essays, such as in the case of the Ukrainian corpus)
